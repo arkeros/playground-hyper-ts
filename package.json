@@ -1,5 +1,7 @@
 {
+  "license": "MIT",
   "scripts": {
+    "prestart": "yarn install --frozen-lockfile",
     "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/main.ts",
     "prettier": "prettier --config .prettierrc --write \"{src,test}/**/*.ts\""
   },
