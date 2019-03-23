@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/main.ts",
+    "prettier": "prettier --config .prettierrc --write \"{src,test}/**/*.ts\""
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "fp-ts": "1.15.0",
+    "hyper-ts": "0.3.0",
+    "io-ts": "1.8.3",
+    "io-ts-types": "0.4.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/ramda": "^0.26.4",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
+  }
+}
