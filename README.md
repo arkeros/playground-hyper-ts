@@ -1,8 +1,13 @@
 # RUN at root
 
+# DEV
+
 ```bash
-docker run -it --rm -p 3000:3000 --volume $PWD:/app node:10.15.3-alpine sh
-cd /app
+docker build -t playground-sdk:alpine sdk
+```
+
+```bash
+docker run -it --rm -p 3000:3000 --volume $PWD:/app playground-sdk:alpine bash
 yarn start
 ```
 
