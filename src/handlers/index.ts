@@ -1,7 +1,6 @@
 import { MiddlewareTask, param, Handler, lift } from 'hyper-ts/lib/MiddlewareTask'
 import { StatusOpen } from 'hyper-ts'
 import { Option, some, none } from 'fp-ts/lib/Option'
-import * as t from 'io-ts'
 import { TaskEither, tryCatch } from 'fp-ts/lib/TaskEither'
 import { PathReporter } from 'io-ts/lib/PathReporter'
 import { identity } from 'fp-ts/lib/function'
