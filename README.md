@@ -8,7 +8,7 @@ docker build -t playground-sdk:alpine sdk
 
 ```bash
 docker run -it --rm -p 3000:3000 --volume $PWD:/app playground-sdk:alpine bash
-yarn start
+yarn start:watch
 ```
 
 ## Test
