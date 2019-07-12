@@ -1,29 +1,29 @@
 {
-  "license": "MIT",
-  "scripts": {
-    "prestart": "yarn install --frozen-lockfile",
-    "start": "'ts-node src/main.ts",
-    "prestart:watch": "yarn prestart",
-    "start:watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts",
-    "build": "tsc",
-    "build:watch": "tsc -w",
-    "prettier": "prettier --config .prettierrc --write \"{src,test}/**/*.ts\""
-  },
-  "dependencies": {
-    "express": "4.16.4",
-    "fp-ts": "1.15.0",
-    "hyper-ts": "0.3.0",
-    "io-ts": "1.8.3",
-    "io-ts-types": "0.4.4",
-    "monocle-ts": "1.7.1",
-    "newtype-ts": "0.2.4"
-  },
-  "devDependencies": {
-    "@types/express": "4.11.0",
-    "nodemon": "1.18.10",
-    "prettier": "1.16.4",
-    "ts-node": "8.0.3",
-    "tslib": "1.9.3",
-    "typescript": "3.3.4000"
-  }
+    "license": "MIT",
+    "scripts": {
+        "prestart": "yarn install --frozen-lockfile",
+        "start": "ts-node src/main.ts",
+        "prestart:watch": "yarn prestart",
+        "start:watch": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/main.ts",
+        "build": "tsc",
+        "build:watch": "tsc -w",
+        "prettier": "prettier --config .prettierrc --write \"{src,test}/**/*.ts\""
+    },
+    "dependencies": {
+        "express": "4.16.4",
+        "fp-ts": "1.15.0",
+        "hyper-ts": "0.3.0",
+        "io-ts": "1.8.3",
+        "io-ts-types": "0.4.4",
+        "monocle-ts": "1.7.1",
+        "newtype-ts": "0.2.4"
+    },
+    "devDependencies": {
+        "@types/express": "4.11.0",
+        "nodemon": "1.18.10",
+        "prettier": "1.16.4",
+        "ts-node": "8.0.3",
+        "tslib": "1.9.3",
+        "typescript": "3.3.4000"
+    }
 }
